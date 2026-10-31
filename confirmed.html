@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Email confirmed — SAMEERA</title>
+<title>Email confirmed — BOCA</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>:root{--ink:#1c2430;--soft:#5b6472;--navy:#1f3a5f;--line:#e7e2d8;--bg:#f7f3ea}
@@ -17,10 +17,10 @@ p{color:var(--soft);margin:0}</style>
 </head>
 <body>
 <main>
-<p class="brand">SAMEERA</p>
+<p class="brand">BOCA</p>
 <div class="mark" id="mark">✓</div>
 <h1 id="title">Email confirmed</h1>
-<p id="body">You’re all set. Go back to the SAMEERA app and sign in.</p>
+<p id="body">You’re all set. Go back to the BOCA app and sign in.</p>
 </main>
 <script>
 // Supabase sends people here after they tap the link in the confirmation email; an old or used link comes back with an error.
@@ -28,7 +28,7 @@ var q = new URLSearchParams(location.search + '&' + location.hash.slice(1))
 if (q.get('error') || q.get('error_code')) {
   document.getElementById('mark').textContent = '!'
   document.getElementById('title').textContent = 'This link has expired'
-  document.getElementById('body').textContent = 'Open SAMEERA and sign in — we’ll email you a fresh confirmation link.'
+  document.getElementById('body').textContent = 'Open BOCA and sign in — we’ll email you a fresh confirmation link.'
 }
 history.replaceState(null, '', location.pathname)
 </script>
